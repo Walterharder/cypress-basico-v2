@@ -50,7 +50,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.contains('Mensagem enviada com sucesso.')
     })
 
-    it.only('Exibe mensagem de erro ao submeter o formulário com um email com formatação inválida', function() {
+    it('Exibe mensagem de erro ao submeter o formulário com um email com formatação inválida', function() {
       cy.get('input[id="firstName"]')
       .should('be.visible')
       .type('Walter Mateus')
